@@ -4,8 +4,8 @@ import { swiggy_api_URL } from "../assets/constants";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import "./restaurant.css";
-// import UserContext from "./assets/UserContext";
 import UserContext from "../assets/UserContext";
+
 
 function filterData(searchbar, restaurants) {
   const resFilterData = restaurants.filter((restaurant) =>
@@ -35,7 +35,7 @@ function Restaurant() {
         for (let i = 0; i < jsonData?.data?.cards.length; i++) {
           // initialize checkData for Swiggy Restaurant data
           let checkData =
-            json?.data?.cards[i]?.card?.card?.gridElements?.infoWithStyle
+            json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
               ?.restaurants;
 
           // if checkData is not undefined then return it
